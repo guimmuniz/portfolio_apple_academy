@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quoted
+{% endblock %}
+
+{% block main %}
+    <p>The symbol {{ data.symbol }} belongs to {{ data.name }}. Each share worth U{{ data.price | usd }}</p>
+{% endblock %}
